@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+<link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-
-    <label for="input">Number of die:</label>
+<main>
+    <label for="input">🎲  </label>
     <input type="text" id="input" onfocus="this.value=''" value="ENTER NUMBER..." name="input">
 
     <button id="roll">ROLL!</button>
-
+    <button id="reset" onclick="window.location.reload();">Reset</button>
     <div id="total">
-
     </div>
+    <div id="showButton">
     <button id="show">Show all rolls</button>
 
     <ol id="allrolls">
 
     </ol>
+</div>
+</main>
 
     <script src="./assets/main.js"></script>
 </body>

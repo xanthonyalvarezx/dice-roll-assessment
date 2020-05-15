@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --button-text-color:brown;
+}
+
+body{
+    display: flex;
+    background-image: url('./Craps-Table-at-a-Casino.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 930px;
+    color: azure;
+    justify-content: center
+    ;
+   }
+   main{
+       height: fit-content;
+       
+       
+   }
+
+   label{
+       font-size: 40px;
+   }
+
+   #show, #roll, #reset{
+       color:var(--button-text-color);
+       font-size: 13px;
+   }
+   #total, #showButton{
+       display: flex;
+       justify-content: center;
+   }
+   #show{
+       height: fit-content;
+   }
+  
+
+
+
+
+
+
+
+
