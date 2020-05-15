@@ -6,17 +6,22 @@ let roll = document.querySelector('#roll') // roll button
 let input = document.querySelector('#input') //input number
 let total = document.querySelector('#total')
 let showRolls = document.querySelector('#show')
+let sides = document.querySelector('#sides')
+
 
 roll.addEventListener('click', function () {
     let dieNumber = parseInt(input.value) //the input value
-
-
+    
+    
     while (dieRolls.length < dieNumber) { //while die rolls length is less than te number of die
-        dieRolls.push(Math.floor(Math.random() * 6 + 1)) //push a random number to dieRolls array
+        dieRolls.push(Math.floor(Math.random() * parseInt(sides.value) + 1)) //push a random number to dieRolls array
 
+        
         let sum = dieRolls.reduce(function (total, amount) { //reduce array to 
             return total + amount
         })
+    
+
         total.innerText = 'The sum of the roll is' + ' ' + sum
 
         console.log(dieRolls)
