@@ -37,7 +37,20 @@ body{
    #show{
        height: fit-content;
    }
-  
+  li{
+      border: solid 3px rgb(70, 24, 24);
+      border-right:solid 2px red;
+      border-top:solid 18px red;
+      border-radius: 2px;
+      margin: 5px;
+      padding: 5px;
+      padding-left: 8px;
+      padding-top: 10px;
+      padding-right: 20px;
+      width: 30px;
+      background-color:rgb(136, 46, 14);
+      
+  }
 
 
 

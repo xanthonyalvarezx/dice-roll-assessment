@@ -37,6 +37,7 @@ showRolls.addEventListener('click', function () { // <= listen for click
 
         newItem.appendChild(itemContent) // append new content to new list item
         let list = document.querySelector('#allrolls')// add variable to my ordered list
+    
 
 
         list.appendChild(newItem)// append child to my is
