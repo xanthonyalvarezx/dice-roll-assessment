@@ -11,10 +11,11 @@ body{
     background-image: url('./Craps-Table-at-a-Casino.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 930px;
+    height: 1100px;
     color: azure;
     justify-content: center
-    ;
+;
+flex-wrap: wrap;
    }
    main{
        height: fit-content;
@@ -50,6 +51,29 @@ body{
       width: 30px;
       background-color:rgb(136, 46, 14);
       
+  }
+  #lucky{
+      position:relative;
+      bottom:200px;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      font-size: 54px;
+      color: var(--button-text-color);
+     height: fit-content;
+      margin: 500px;
+      padding: 2px;
+      font-family: 'Bungee Inline', cursive;
+  }
+
+  @media(max-width:1503px ){
+      body{
+          height:1200px
+      }
+
+      @media(max-width:450px){
+          body{height:1300px;}
+      }
   }
 
 
