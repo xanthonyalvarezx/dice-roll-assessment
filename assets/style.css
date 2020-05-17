@@ -13,12 +13,11 @@ body{
     background-size: cover;
     height: 1100px;
     color: azure;
-    justify-content: center
-;
-flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
    }
    main{
-       height: fit-content;
+       height: 300px;
        
        
    }
@@ -38,12 +37,19 @@ flex-wrap: wrap;
    #show{
        height: fit-content;
    }
+
+   #allrolls{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       height: 500px;
+   }
   li{
       border: solid 3px rgb(70, 24, 24);
       border-right:solid 2px red;
       border-top:solid 18px red;
       border-radius: 2px;
-      margin: 5px;
+      margin: 15px;
       padding: 5px;
       padding-left: 8px;
       padding-top: 10px;
@@ -61,19 +67,37 @@ flex-wrap: wrap;
       font-size: 54px;
       color: var(--button-text-color);
      height: fit-content;
-      margin: 500px;
+      margin: 100px;
       padding: 2px;
       font-family: 'Bungee Inline', cursive;
+      margin-top:1000px;
   }
 
-  @media(max-width:1503px ){
+  @media(max-width:1115px ){
       body{
-          height:1200px
+          height:1375px;
       }
 
-      @media(max-width:450px){
-          body{height:1300px;}
-      }
+   
+      
+
+      @media(max-width:900px){
+
+        body{
+            height:1500px;
+        }
+       #lucky{
+           display: flex;
+           
+           margin-left:500px;
+           justify-content: center;
+       }
+       
+       
+      
+    
+
+      
   }
 
 
