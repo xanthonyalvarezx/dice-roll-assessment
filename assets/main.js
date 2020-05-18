@@ -12,9 +12,9 @@ let sides = document.querySelector('#sides')
 roll.addEventListener('click', function () {
     let dieNumber = parseInt(input.value) //the input value
     
-    
+  
     while (dieRolls.length < dieNumber) { //while die rolls length is less than te number of die
-        dieRolls.push(Math.floor(Math.random() * parseInt(sides.value) + 1)) //push a random number to dieRolls array
+        dieRolls.push(Math.floor(Math.random() * parseInt(sides.value) + 1 )) //push a random number to dieRolls array
 
         
         let sum = dieRolls.reduce(function (total, amount) { //reduce array to 
@@ -25,8 +25,9 @@ roll.addEventListener('click', function () {
         total.innerText = 'The sum of the roll is' + ' ' + sum
 
         console.log(dieRolls)
+    
     }
-
+   
 
 }) // event listner while i < array .length create new html element with inner text of current index.
 showRolls.addEventListener('click', function () { // <= listen for click
@@ -48,7 +49,8 @@ showRolls.addEventListener('click', function () { // <= listen for click
         list.appendChild(newItem)// append child to my is
 
         console.log(list)
-
+        
         i++// incriment index
     }
+    dieRolls = []
 })
